@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806485161601",
+    "firebase_url": "https://petagram-20e78.firebaseio.com",
+    "project_id": "petagram-20e78",
+    "storage_bucket": "petagram-20e78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806485161601:android:59d5759c2d245369",
+        "android_client_info": {
+          "package_name": "com.anncode.aplicacioncontactos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806485161601-o29fr1bqod427afni8s51m16f43jhn81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anncode.aplicacioncontactos",
+            "certificate_hash": "C74A00D89CC144B06060DBD23FADA6CB551C7CFA"
+          }
+        },
+        {
+          "client_id": "806485161601-4a2i2jt8vkagcsci8nug84bl864jdkgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFc8UWhxWdmTAwPfVNZTmkWEKcOqWevCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806485161601-4a2i2jt8vkagcsci8nug84bl864jdkgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

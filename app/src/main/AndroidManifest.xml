@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anncode.recyclerviewfragments">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NODE.JS Instagram"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.anncode.aplicacioncontactos.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.anncode.aplicacioncontactos.DetalleContacto" />
+        <activity android:name="com.anncode.aplicacioncontactos.CuentaInstagram" />
+
+        <service android:name="com.anncode.aplicacioncontactos.GCM.Notifications.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.anncode.aplicacioncontactos.GCM.Notifications.NotificacionIDTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.anncode.aplicacioncontactos.GCM.Notifications.GetNotificaciones" />
+
+        <receiver android:name="com.anncode.aplicacioncontactos.Wear.SeguirUsuario">
+            <intent-filter>
+                <action android:name="FOLLOW" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.anncode.aplicacioncontactos.Wear.unFollowUser">
+            <intent-filter>
+                <action android:name="UNFOLLOW" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.anncode.aplicacioncontactos.Wear.photosActivity"></activity>
+    </application>
+
+</manifest>
